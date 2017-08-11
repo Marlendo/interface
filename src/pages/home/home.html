@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="light">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only solid>
+        <ion-icon name="apps"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content style="background:url(assets/img/home.jpg) repeat left;" padding="20px">
+ <button ion-button full large color="batik">Example Of Theme</button>
+    <ion-slides  style="width:100%;height:60vw;">
+      <ion-slide style="background:url(assets/img/slide1.png) no-repeat center;background-size:cover;"></ion-slide>
+      <ion-slide style="background:url(assets/img/slide2.jpg) no-repeat center;background-size:cover;"></ion-slide>
+      <ion-slide  style="background:url(assets/img/slide3.jpg) no-repeat center;background-size:cover;"></ion-slide>
+    </ion-slides>
+   <ion-item>
+      <ion-label>Pilih Tema</ion-label>
+      <ion-select [(ngModel)]="tema" interface="popover">
+        <ion-option value="Batik">Batik</ion-option>
+        <ion-option value="Bunga">Bunga</ion-option>
+        <ion-option value="Modern">Modern</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pilih Bahasa</ion-label>
+      <ion-select [(ngModel)]="bahasa" interface="popover">
+        <ion-option value="Indonesia">Indonesia</ion-option>
+        <ion-option value="Jawa">Jawa</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+       <ion-label>Pilih Agama</ion-label>
+      <ion-select [(ngModel)]="agama" interface="popover">
+        <ion-option value="Islam">Islam</ion-option>
+      </ion-select>
+    </ion-item>
+      <button ion-button full color="light">Input Data Undangan</button>
+  </ion-content>
